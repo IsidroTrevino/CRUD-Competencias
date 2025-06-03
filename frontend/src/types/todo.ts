@@ -22,7 +22,3 @@ export interface TodoUpdateInput {
 export interface TodoCompleteInput {
     is_complete: boolean;
 }
-
-export interface ApiError {
-    message: string;
-}

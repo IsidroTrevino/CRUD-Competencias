@@ -1,4 +1,4 @@
-import { Todo, TodoInput, TodoUpdateInput, ApiError } from '../../types/todo';
+import { Todo, TodoInput, TodoUpdateInput } from '../../types/todo';
 
 const API_URL = 'https://crud-api-competencias.vercel.app/api/todos';
 
@@ -11,7 +11,7 @@ export async function fetchTodos(): Promise<Todo[]> {
         const response = await fetch(API_URL);
         if (!response.ok) throw new Error('Failed to fetch todos');
         return await response.json();
-    } catch (error: ApiError) {
+    } catch (error) {
         throw new Error(`Error fetching todos: ${error.message}`);
     }
 }
@@ -30,7 +30,7 @@ export async function createTodo(todoData: TodoInput): Promise<Todo> {
         });
         if (!response.ok) throw new Error('Failed to create todo');
         return await response.json();
-    } catch (error: ApiError) {
+    } catch (error) {
         throw new Error(`Error creating todo: ${error.message}`);
     }
 }
@@ -50,7 +50,7 @@ export async function updateTodo(id: number, todoData: TodoUpdateInput): Promise
         });
         if (!response.ok) throw new Error('Failed to update todo');
         return await response.json();
-    } catch (error: ApiError) {
+    } catch (error) {
         throw new Error(`Error updating todo: ${error.message}`);
     }
 }
@@ -67,7 +67,7 @@ export async function deleteTodo(id: number): Promise<boolean> {
         });
         if (!response.ok) throw new Error('Failed to delete todo');
         return true;
-    } catch (error: ApiError) {
+    } catch (error) {
         throw new Error(`Error deleting todo: ${error.message}`);
     }
 }
@@ -87,7 +87,7 @@ export async function toggleTodoComplete(id: number, isComplete: boolean): Promi
         });
         if (!response.ok) throw new Error('Failed to update todo status');
         return await response.json();
-    } catch (error: ApiError) {
+    } catch (error) {
         throw new Error(`Error updating todo status: ${error.message}`);
     }
 }
