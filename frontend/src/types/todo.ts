@@ -7,7 +7,7 @@ export interface Todo {
     updated_at?: string;
 }
 
-export interface TodoInput {
+export interface TodoFormData {
     title: string;
     description?: string;
     is_complete?: boolean;
