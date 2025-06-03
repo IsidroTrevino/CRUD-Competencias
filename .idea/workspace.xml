@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e4f0a41-1c6f-4ecb-9c2b-41da58d92bff" name="Changes" comment="refactor: rename TodoInput interface to TodoFormData for clarity">
+    <list default="true" id="2e4f0a41-1c6f-4ecb-9c2b-41da58d92bff" name="Changes" comment="refactor: rename TodoInput type to TodoFormData for improved clarity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/api/hooks/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/hooks/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/TodoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TodoItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748850757302</updated>
       <workItem from="1748850758706" duration="1278000" />
-      <workItem from="1748852039103" duration="12070000" />
+      <workItem from="1748852039103" duration="12331000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: update API integration and improve type definitions">
       <option name="closed" value="true" />
@@ -127,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748918804322</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="refactor: rename TodoInput type to TodoFormData for improved clarity">
+      <option name="closed" value="true" />
+      <created>1748918991120</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748918991120</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +149,7 @@
     <MESSAGE value="refactor: remove unused ApiError type and simplify error handling in API functions" />
     <MESSAGE value="refactor: improve error handling in API functions by removing .message from error objects" />
     <MESSAGE value="refactor: rename TodoInput interface to TodoFormData for clarity" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: rename TodoInput interface to TodoFormData for clarity" />
+    <MESSAGE value="refactor: rename TodoInput type to TodoFormData for improved clarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: rename TodoInput type to TodoFormData for improved clarity" />
   </component>
 </project>

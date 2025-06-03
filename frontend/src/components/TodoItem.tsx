@@ -97,7 +97,7 @@ export default function TodoItem({ todo, onUpdate, onDelete, onToggleComplete }:
                         {todo.title}
                     </h3>
                     <span className="text-xs px-2 py-1 rounded-full ml-2 inline-block bg-gray-100 text-gray-600">
-            {new Date(todo.created_at).toLocaleDateString()}
+            {new Date(todo.created_at || new Date()).toLocaleDateString()}
           </span>
                 </div>
                 {todo.description && (
