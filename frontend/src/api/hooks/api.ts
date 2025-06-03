@@ -1,4 +1,4 @@
-import { Todo, TodoInput, TodoUpdateInput } from '../../types/todo';
+import { Todo, TodoFormData, TodoUpdateInput } from '../../types/todo';
 
 const API_URL = 'https://crud-api-competencias.vercel.app/api/todos';
 
@@ -18,10 +18,10 @@ export async function fetchTodos(): Promise<Todo[]> {
 
 /**
  * Creates a new todo
- * @param {TodoInput} todoData - The todo data
+ * @param {TodoFormData} todoData - The todo data
  * @returns {Promise<Todo>} The created todo
  */
-export async function createTodo(todoData: TodoInput): Promise<Todo> {
+export async function createTodo(todoData: TodoFormData): Promise<Todo> {
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
